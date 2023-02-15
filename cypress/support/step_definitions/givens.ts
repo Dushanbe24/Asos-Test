@@ -5,6 +5,10 @@ Given(/^I navigate to the Home Page$/, function () {
 });
 
 Given("I click the cookiy button", function () {
-  cy.wait(500);
+  cy.wait(100);
   cy.get("#onetrust-accept-btn-handler").click();
+});
+
+Given("I select the button {string}", function (button: string) {
+  cy.contains(button).should("be.visible").click();
 });

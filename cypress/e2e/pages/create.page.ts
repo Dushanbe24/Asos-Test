@@ -1,14 +1,17 @@
 /// <reference types="cypress" />
 import JQuery = Cypress.ChainableMethods;
 
-class HomePage {
+class CreatePage {
   getElementByTag(tag: string) {
-    return cy.get("");
+    return cy.get(`[data-testid="${tag}"]`);
   }
-
   title() {
     return cy.title();
   }
+
+  header() {
+    return cy.get("asoslogo").parent();
+  }
 }
 
-export default new HomePage();
+export default new CreatePage();

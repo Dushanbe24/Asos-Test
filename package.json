@@ -6,7 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cy:open": "cypress open",
-    "cypress": "npx cypress open"
+    "cypress": "npx cypress open",
+    "cy:test": "npm run cy:verify && npm run cy:info && npm run cy:chrome",
+    "cy:client": "cypress run --spec cypress/e2e/client/*.feature",
+    "cy:chrome": "cypress run --spec cypress/e2e/client/*.feature --browser chrome --record --key a0803631-a8bc-41ba-8ec1-91016eb100bd",
+    "cy:verify": "cypress verify",
+    "cy:info": "cypress info"
   },
   "keywords": [],
   "author": "",
