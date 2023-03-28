@@ -1,0 +1,22 @@
+---------------------------------------------------------------------------
+1.mkdir asos-cypress-test
+2.cd asos-cypress-test
+3.pwd
+4.npm init
+5.npm init -y
+6.code .
+7.npm install --save-dev cypress
+8.npx cypress open
+9. npm install @badeball/cypress-cucumber-preprocessor -D
+10. npm i @cypress/browserify-preprocessor -D
+11. npm i typescript -D
+12.
+13.
+14.
+15.
+16.
+17.
+18.
+19.
+20. 
+   
